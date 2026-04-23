@@ -1,0 +1,20 @@
+name: Deploy frontend
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy frontend
+    runs-on: ubuntu-latest
+    env:
+      # No secrets configured
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          npm ci && npm run build
+      - name: Deploy
+        run: echo "Add your deploy script here (ssh, docker push, etc.)"
