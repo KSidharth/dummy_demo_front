@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
       <div className="bg-white p-12 rounded-2xl shadow-2xl max-w-md w-full">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
-          Hike Evaluation System
+          Hike Evaluation Machine
         </h1>
         <p className="text-center text-gray-600 mb-8">
           Select your role to continue
