@@ -158,13 +158,13 @@ const EmployeeDashboard: React.FC = () => {
                 </h3>
 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-gray-700 mb-3">Employee Hike Percentages</h4>
+                  <h4 className="font-semibold text-gray-700 mb-3">Employee Hike Data</h4>
                   <div className="grid grid-cols-5 gap-3">
                     {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
                       <div key={num} className="bg-gray-50 p-3 rounded border border-gray-200">
                         <p className="text-xs text-gray-600">Employee {num}</p>
                         <p className="text-lg font-bold text-gray-800">
-                          {record[`hike_of_employee_${num}` as keyof HikeRecordDto]}%
+                          {record[`hike_of_employee_${num}` as keyof HikeRecordDto]}k
                         </p>
                       </div>
                     ))}
@@ -174,16 +174,16 @@ const EmployeeDashboard: React.FC = () => {
                 <div className="grid grid-cols-3 gap-4">
                   <div className="bg-blue-50 p-4 rounded border border-blue-200">
                     <p className="text-sm text-gray-600">Highest Hike</p>
-                    <p className="text-2xl font-bold text-blue-800">{record.highest_hike}%</p>
+                    <p className="text-2xl font-bold text-blue-800">{record.highest_hike}k</p>
                   </div>
                   <div className="bg-red-50 p-4 rounded border border-red-200">
                     <p className="text-sm text-gray-600">Lowest Hike</p>
-                    <p className="text-2xl font-bold text-red-800">{record.lowest_hike}%</p>
+                    <p className="text-2xl font-bold text-red-800">{record.lowest_hike}k</p>
                   </div>
                   <div className="bg-green-50 p-4 rounded border border-green-200">
                     <p className="text-sm text-gray-600">Average Hike</p>
                     <p className="text-2xl font-bold text-green-800">
-                      {record.hike_average.toFixed(2)}%
+                      {record.hike_average.toFixed(2)}k
                     </p>
                   </div>
                 </div>

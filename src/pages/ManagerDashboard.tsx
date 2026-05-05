@@ -146,19 +146,19 @@ const ManagerDashboard: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white p-4 rounded shadow">
                 <p className="text-sm text-gray-600">Highest Hike</p>
-                <p className="text-2xl font-bold text-gray-800">{statistics.highest_hike}%</p>
+                <p className="text-2xl font-bold text-gray-800">{statistics.highest_hike}k</p>
               </div>
               <div className="bg-white p-4 rounded shadow">
                 <p className="text-sm text-gray-600">Lowest Hike</p>
-                <p className="text-2xl font-bold text-gray-800">{statistics.lowest_hike}%</p>
+                <p className="text-2xl font-bold text-gray-800">{statistics.lowest_hike}k</p>
               </div>
               <div className="bg-white p-4 rounded shadow">
                 <p className="text-sm text-gray-600">Average Hike</p>
-                <p className="text-2xl font-bold text-gray-800">{statistics.hike_average.toFixed(2)}%</p>
+                <p className="text-2xl font-bold text-gray-800">{statistics.hike_average.toFixed(2)}k</p>
               </div>
               <div className="bg-white p-4 rounded shadow">
                 <p className="text-sm text-gray-600">Total Spend</p>
-                <p className="text-2xl font-bold text-gray-800">{statistics.total_spend}%</p>
+                <p className="text-2xl font-bold text-gray-800">{statistics.total_spend}k</p>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@ const ManagerDashboard: React.FC = () => {
 
           {showHikeFields && (
             <>
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Employee Hike Percentages</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Employee Hike Data</h3>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
                   <div key={num}>
