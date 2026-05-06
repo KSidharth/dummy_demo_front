@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
           Hike Evaluation System
         </h1>
         <p className="text-center text-gray-600 mb-8">
-          Select your profile to continue
+          Select your role to continue
         </p>
         <div className="space-y-4">
           <button
